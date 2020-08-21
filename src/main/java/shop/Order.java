@@ -13,6 +13,7 @@ public class Order {
     private Long id;
     private String productId;
     private Integer qty;
+    private String status;
 
     @PostPersist
     public void onPostPersist(){
@@ -63,6 +64,14 @@ public class Order {
 
     public void setQty(Integer qty) {
         this.qty = qty;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 
